@@ -19,7 +19,7 @@ I do a lot of front-end development, and building UI is part of the job. I have 
 
 * **Matter**  is a set of Material Design components, written in pure CSS. You add a single CSS class to your HTML element, and it gets "materialized." When my customers prefer Google Material Design, I choose [Matter](github.com/finnhvman/matter){: rel="nofollow" }.
 
-* **Element** is a component library for Vue.js. I love Vue, and when it comes to choosing a component library, and I need some advanced components, such as steps or infinite scroll, that Bulma doesn't have, I rely on [Element](https://element.eleme.cn){: rel="nofollow" }.
+* **Element** is a component library for Vue.js. I love Vue, and when it comes to choosing a component library, I prefer Bulma. But Bulma misses some advanced components, such as steps or infinite scroll. In that case, I rely on [Element](https://element.eleme.cn){: rel="nofollow" }.
 ⠀
 
 What UI component library do you use?
