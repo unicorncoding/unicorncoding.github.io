@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {% if page.includeYear %}
+        {% assign year = 'now' | date: "%Y" %}
+      {% else %}
+        {% assign year = "" %}
+      {% endif %}      
+    <title>{% if page.title %}{{ page.title }} {{year}} – {% endif %}{{ site.title }} by {{ site.author }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?version=3" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} by {{ site.author }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href="//fonts.googleapis.com/css?family=Quicksand:700|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/png" href="{{ site.avatar }}">
+    <link rel="icon" href="{{ site.avatar }}">
+    <link rel="shortcut icon" sizes="64x64" href="{{ site.avatar }}">
+
+    <script>
+        function hide(eid) {
+          var item = document.getElementById(eid)
+          item.style.display = "none";
+        }
+
+        function show(eid) {
+          var item = document.getElementById(eid)
+          item.style.display = "block";
+        }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <i id="header-toggle" class="show-mobile fas fa-bars" onclick="show('header'); hide('header-toggle')"></i>
+        <header id="header" class="masthead hide-mobile">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <h2>{{site.title}}</h2>
+          <h3>
+            <i>
+              👋 Hi! My name is Julia. <br>I'm a full-stack developer, specializing in Java and JavaScript. <br>I write about coding and career.<br>            
+            </i>
+          </h3>
+          <nav>
+            <a href="/"><i class="fa fa-home"></i></a>              
+            <a href="//instagram.com/coding_unicorn" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="//twitter.com/intent/follow?screen_name=UnicornCoding" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="{{ site.baseurl }}/feed.xml" target="_blank"><i class="fas fa-rss"></i></a>     
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+    {% include analytics.html %}
+  </body>
+</html>

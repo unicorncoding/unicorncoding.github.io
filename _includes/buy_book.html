@@ -1,0 +1,33 @@
+<div class="dropdown">
+    <button onclick="popup('{{include.asin}}')">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        Amazon
+    </button>
+    <div class="dropdown-content" id="{{include.asin}}">
+        {% for affiliate in site.affiliates %}
+            {% assign link = "https://" | append: affiliate[0] | append: "/gp/product/" | append: include.asin | append: "/?tag=" | append: affiliate[1] %}
+                <a href="{{link}}" target="_blank">
+                    {{affiliate[0]}}
+                </a>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    function popup(asin) {
+        document.getElementById(asin).classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('button')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }    
+</script>

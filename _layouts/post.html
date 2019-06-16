@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="post">
+  
+  <h2>
+      {{ page.title }}
+  </h2>
+  <h3><i>{{ page.date | date: "%e %B %Y" }}</i></h3>
+  
+  <hr>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% unless page.noActions %}
+    {% include call_for_action.html %}
+  {% endunless %}
+
+  <div class="centered">
+  {% include share.html %}
+  </div>    
+  <hr>
+
+  {% include disqus.html %}
+  {% include footer.html %}
+</article>

@@ -1,0 +1,51 @@
+{% assign thisYear = '2019' %}
+{% assign nextYear = '2020' %}
+
+{% assign today = 'now' | date: "%Y-%m-%d" %}
+
+{% assign picks = site.data.conferences_meta.picks %}
+{% assign allConferences = site.data.confs.conferences %}
+{% assign confsTech = allConferences[thisYear][include.topic] | concat: allConferences[nextYear][include.topic] %}
+{% assign confsTechNoDevTernity = confsTech | where_exp: "self", "self.name != 'DevTernity'" %}
+{% assign confsTechNoMyStuff = confsTechNoDevTernity | where_exp: "self", "self.name != 'The Principal Developer'" %}
+{% assign general = picks | concat: confsTechNoMyStuff %}
+{% assign generalUpcoming = general | where_exp: "self", "self.startDate > today" %}
+{% assign generalUpcomingSorted = generalUpcoming | sort: "startDate" %}
+
+**The list was updated in {{thisYear}}.**
+
+This is the ultimate list of all {{include.what}} conferences in Europe and USA. The list includes call-for-papers (CFP) dates. All the information here has been compiled correctly to the best of my knowledge. If you notice that I’ve left out a {{include.what}} conference or conference date that’s been published in the meantime, please comment.
+
+## {{generalUpcomingSorted | size}} upcoming {{include.what}} conferences
+
+| Name           | Location  | Date           | CFP  |
+| :------------- | :-------- | :------------- | : ---|
+{% for c in generalUpcomingSorted -%}
+{% assign name = c.name | truncate: 30, '...' -%}
+{% assign location = c.city | append: ", " | append: c.country | truncate: 25 -%}
+{% assign cfpRunning = c.cfpEndDate > today -%}
+{% if cfpRunning and c.cfpUrl -%}
+{% capture cfpLink -%}[<i class="fas fa-external-link-alt"></i>]({{c.cfpUrl}}){: rel="nofollow" }{% endcapture -%}
+{% elsif cfpRunning -%}
+{% capture cfpLink -%}[<i class="fas fa-external-link-alt"></i>]({{c.url}}){: rel="nofollow" }{% endcapture -%}
+{% else cfpRunning -%}
+{% endif -%}
+{% unless c.startDate contains c.endDate -%}
+{% assign endDay = c.endDate | date: "%-d" -%}
+{% assign month = c.startDate | date: "%b %y" -%}
+{% assign date = c.startDate | date: "%-d" | append: "–" | append: endDay | append: " " | append: month -%}
+{% endunless -%}
+{% if c.startDate contains c.endDate -%}
+{% assign date = c.startDate | date: "%-d %b %y" -%}
+{% endif -%}
+{% unless c.staffPick -%}
+{% if cfpRunning -%}
+| [{{name}}]({{c.url}}){: rel="nofollow" } | {{location}} | {{date}} | {{cfpLink}} |
+{% else -%}
+| [{{name}}]({{c.url}}){: rel="nofollow" } | {{location}} | {{date}} | – |
+{% endif -%}
+{% endunless -%}
+{% if c.staffPick -%}
+| 🏅[{{name}}]({{c.url}}) | {{location}} | {{date}} | – |
+{% endif -%}
+{% endfor %}
