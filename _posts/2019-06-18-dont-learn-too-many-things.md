@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don't Learn Too Much
+title: Don't Learn Too Many Things
 image: dont-learn-too-much.jpg
 
 ---
