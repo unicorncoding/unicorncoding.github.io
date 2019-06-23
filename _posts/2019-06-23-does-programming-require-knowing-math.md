@@ -23,7 +23,7 @@ However:
 
 1️⃣ To succeed as a programmer, you need to understand school-level math, like calculus and algebra. These are the basics that every person needs to know to survive in the modern world. Not only programmers. Remember that if you are a graduate applying for a job at Google, they might test your math skills. Not because you'll do math at work, but because Google wants to know how well you studied or see how you approach the problem.
 
-2️⃣ If you work with graphics or, say, in game dev, you'll need more in-depth math and physicals knowledge. Some frameworks hide science from a programmer and you can build cool things without knowing math. However, sometimes you'll have to code things or dive into library code to understand how it works. Good news is that if you suck at math or don't like it, you can find other cool projects to work on. Only a fraction of projects requires math skills.
+2️⃣ If you work with graphics or, say, in game dev, you'll need more in-depth math and physics knowledge. Some frameworks hide science from a programmer and you can build cool things without knowing math. However, sometimes you'll have to code things or dive into library code to understand how it works. Good news is that if you suck at math or don't like it, you can find other cool projects to work on. Only a fraction of projects requires math skills.
 
 3️⃣ There are certain areas where knowledge of graphs or probability is essential. Social networks leverage graphs; machine learning is all about probability. However, you can always learn everything you need along the way. Being able to learn is more important than knowing things. You never know what your next project will be, so don't waste time learning things before you need them.
 
