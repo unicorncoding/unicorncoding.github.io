@@ -23,7 +23,7 @@ Depending on tools that you use, Terminal can either make you productive or slow
 
 6️⃣ **[fd](//github.com/sharkdp/fd){: rel="nofollow" }** is a better and simpler version of `find`. I still can't use `find` effectively after being a Linux user for 10 years, but I have no problems understanding `fd`.
 
-7️⃣ **[fzf](//github.com/junegunn/fzf){: rel="nofollow" }** is a fuzzy finder for a command-line. I use it together with `fd`, like this: `fd . ~/Desktop | fzf`. Forget about searching with GUI!
+7️⃣ **[fzf](//github.com/junegunn/fzf){: rel="nofollow" }** is a fuzzy finder for a command-line or an interactive version of `grep`. It's a great tool to filter stuff like logs, process stats, or files, because unlike grep, you can type as you think and look through the current results. Like a boss: `fd . ~/Desktop | fzf`.
 
 8️⃣ **[tmux](//github.com/tmux/tmux){: rel="nofollow" }** allows me to open and manage multiple split-views in one terminal. Spend 15 minutes [learning](//bit.ly/uni_tmux){: rel="nofollow" } `tmux` and boost your productivity 10x.
 
@@ -34,7 +34,5 @@ Depending on tools that you use, Terminal can either make you productive or slow
 ⤵️ **Bonus utils for awesome developers**
 
 🎁 **[fselect](//github.com/jhspetersson/fselect){: rel="nofollow" }** is a utility for searching files with SQL-like syntax. Isn't the following query self-describing? `fselect name from . where name = '*.mp3' and size gt 1mb`
-
-🎁 **[peco](//github.com/peco/peco){: rel="nofollow" }** is an interactive version of `grep`. It's a great tool to filter stuff like logs, process stats, or files, because unlike grep, you can type as you think and look through the current results.
 
 Enjoy!
