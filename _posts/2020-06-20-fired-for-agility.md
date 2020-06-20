@@ -22,7 +22,7 @@ Yesterday, my manager organized a meeting. The purpose of the meeting: agree whi
 
 ---
 
-I ducked out and just built that landing page. I picked tools that other devs are familiar with. Then quickly deployed the page to staging env, showed it to the customer, and the customer enjoyed it. After a couple of fixes, I shipped to production. **The team was still in the room arguing.**
+I ducked out and just built that landing page. Not bad intentions – I just wanted to build something in my lunchtime. I picked tools that other devs are familiar with. Then quickly deployed the page to staging env, showed it to the customer, and the customer enjoyed it. After a couple of fixes, I shipped to production. **The team was still in the room arguing.**
 
 The team ended the meeting at 18:00. It took them 6 hours to reach consensus. They will use Svelte because Svelte is a new black. The team has zero experience with it whatsoever. Learning is part of the job, right? The manager was facilitating this nonsense. 
 
