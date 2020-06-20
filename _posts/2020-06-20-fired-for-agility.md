@@ -9,7 +9,7 @@ Let me share a story that happened to me this week.
 
 I was hired as a software dev contractor in a web agency. The agency claims to be "the market leader in agility". My bullshit scanner raised a warning, but the money was too good to reject the offer. 
 
-Our team was tasked to create a new landing page for a project of one of our key customers. Nothing particularly exciting, just a colorful landing page with a simple subscription form. So far, so good.
+Our team was tasked to create a new landing page for a project for one of our key customers. Nothing particularly exciting, just a colorful landing page with a simple subscription form. So far, so good.
 
 ![Me Hacking](/images/{{page.image}})
 
