@@ -38,7 +38,7 @@ They said:
 
 > You better stop thinking like a freelancer. 
 
-The customer called me the next day and said that the agency charged them 40 dev/hours for the landing page. I hanged the phone up as if I lost the internet connection. I didn't know what to say. I didn't want to lose my job and lie to the customer either.
+The customer called me the next day and said that the agency charged them 40 dev/hours for the landing page. I hang the phone up, pretending the internet connection was lost. I didn't know what to say. I didn't want to lose my job and lie to the customer either.
 
 ---
 
