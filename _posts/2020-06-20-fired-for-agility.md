@@ -44,7 +44,7 @@ The customer called me the next day and said that the agency charged them 40 dev
 
 People talk a lot about agility, continuous delivery, delighting the customer. Every dev in my team, as well as the manager, is a Certified Scrum Master. They teach others "how to be agile", speak at meetups and conferences. Moreover, they truly believe that these neverending meetings, daily standups, learning at work is what customer must be paying for. 
 
-Those folks work full-time and salary drips on their bank account every month, regardless of the work results. Where is the incentive to delight the customer? Developers are not hungry. Life is good, long meetings and discussions are fun.
+Those folks work full-time and salary drips on their bank account every month, regardless of the work results. Where is the incentive to work fast? Developers are not hungry. Life is good, long meetings and discussions are fun.
 
 This is why many developers are afraid of freelancing or becoming self-employed. You can't just work anymore; You have to actually deliver value asap, otherwise, you can't pay rent. For me, it sounds motivating enough to work faster and pick tools wiser. 
 
