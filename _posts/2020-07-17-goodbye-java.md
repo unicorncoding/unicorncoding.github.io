@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Goodbye Java
+title: Goodbye, Java
 image: fuck_java.jpg
 
 ---
